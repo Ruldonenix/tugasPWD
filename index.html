@@ -4,110 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Mahasiswa</title>
+    <title>Absensi Mahasiswa Teknik Informatika</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 30px;
         }
         
         h2 {
-            text-align: left;
+            text-align: center;
             margin-bottom: 10px;
         }
         
-        fieldset {
-            border: 1px solid #555;
-            margin-bottom: 15px;
-            padding: 10px;
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            border: 1px solid black;
         }
         
-        legend {
-            font-weight: bold;
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
         }
         
-        label {
-            display: inline-block;
-            width: 150px;
-            vertical-align: top;
-            margin-top: 5px;
-        }
-        
-        input,
-        select,
-        textarea {
-            margin-bottom: 8px;
+        th[colspan] {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 
 <body>
+    <h2>Absensi Mahasiswa Teknik Informatika</h2>
 
-    <h2>Form Mahasiswa</h2>
-
-    <form>
-        <fieldset>
-            <legend>Data Mahasiswa</legend>
-            <label>Nama :</label>
-            <input type="text"><br>
-
-            <label>NPM :</label>
-            <input type="text"><br>
-
-            <label>Kelas :</label>
-            <select>
-        <option value="">-- Pilih --</option>
-        <option>A</option>
-        <option>B</option>
-        <option>C</option>
-      </select><br>
-
-            <label>Jenis Kelamin :</label>
-            <input type="radio" name="gender"> Pria
-            <input type="radio" name="gender"> Wanita
-        </fieldset>
-
-        <fieldset>
-            <legend>Tempat Tinggal Mahasiswa</legend>
-            <label>Alamat :</label>
-            <textarea rows="3" cols="30"></textarea><br>
-
-            <label>Kecamatan :</label>
-            <input type="text"><br>
-
-            <label>Kabupaten/Kotamadya :</label>
-            <input type="text"><br>
-
-            <label>Provinsi :</label>
-            <input type="text"><br>
-
-            <label>Kode Pos :</label>
-            <input type="text">
-        </fieldset>
-
-        <fieldset>
-            <legend>Lain-lainnya</legend>
-
-            <label>Bahasa Pemrograman :</label>
-            <input type="checkbox"> C/C++
-            <input type="checkbox"> Go Lang
-            <input type="checkbox"> Python
-            <input type="checkbox"> Lainnya<br>
-            <label></label>
-            <input type="checkbox"> PHP
-            <input type="checkbox"> Javascript
-            <input type="checkbox"> Ruby<br>
-
-            <label>Kegiatan :</label>
-            <input type="checkbox"> Organisasi Kemahasiswaan
-            <input type="checkbox"> Bidang Olahraga
-            <input type="checkbox"> Lainnya<br>
-            <label></label>
-            <input type="checkbox"> Organisasi di Luar Kampus
-            <input type="checkbox"> Bidang Seni
-        </fieldset>
-    </form>
-
+    <table>
+        <tr>
+            <th rowspan="2">NO</th>
+            <th rowspan="2">NPM</th>
+            <th rowspan="2">NAMA</th>
+            <th colspan="7">PERTEMUAN</th>
+        </tr>
+        <tr>
+            <th>9-Feb</th>
+            <th>16-Feb</th>
+            <th>23-Feb</th>
+            <th>2-Mar</th>
+            <th>9-Mar</th>
+            <th>16-Mar</th>
+            <th>23-Mar</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1111111111</td>
+            <td>Nyjah Huston</td>
+            <td>v</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2222222222</td>
+            <td>Luan Olivera</td>
+            <td>v</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3333333333</td>
+            <td>Yuto Horigome</td>
+            <td>v</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 </body>
 
 </html>
