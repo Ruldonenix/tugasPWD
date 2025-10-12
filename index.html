@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        
+        h2 {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        
+        fieldset {
+            border: 1px solid #555;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        
+        legend {
+            font-weight: bold;
+        }
+        
+        label {
+            display: inline-block;
+            width: 150px;
+            vertical-align: top;
+            margin-top: 5px;
+        }
+        
+        input,
+        select,
+        textarea {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Form Mahasiswa</h2>
+
+    <form>
+        <fieldset>
+            <legend>Data Mahasiswa</legend>
+            <label>Nama :</label>
+            <input type="text"><br>
+
+            <label>NPM :</label>
+            <input type="text"><br>
+
+            <label>Kelas :</label>
+            <select>
+        <option value="">-- Pilih --</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+      </select><br>
+
+            <label>Jenis Kelamin :</label>
+            <input type="radio" name="gender"> Pria
+            <input type="radio" name="gender"> Wanita
+        </fieldset>
+
+        <fieldset>
+            <legend>Tempat Tinggal Mahasiswa</legend>
+            <label>Alamat :</label>
+            <textarea rows="3" cols="30"></textarea><br>
+
+            <label>Kecamatan :</label>
+            <input type="text"><br>
+
+            <label>Kabupaten/Kotamadya :</label>
+            <input type="text"><br>
+
+            <label>Provinsi :</label>
+            <input type="text"><br>
+
+            <label>Kode Pos :</label>
+            <input type="text">
+        </fieldset>
+
+        <fieldset>
+            <legend>Lain-lainnya</legend>
+
+            <label>Bahasa Pemrograman :</label>
+            <input type="checkbox"> C/C++
+            <input type="checkbox"> Go Lang
+            <input type="checkbox"> Python
+            <input type="checkbox"> Lainnya<br>
+            <label></label>
+            <input type="checkbox"> PHP
+            <input type="checkbox"> Javascript
+            <input type="checkbox"> Ruby<br>
+
+            <label>Kegiatan :</label>
+            <input type="checkbox"> Organisasi Kemahasiswaan
+            <input type="checkbox"> Bidang Olahraga
+            <input type="checkbox"> Lainnya<br>
+            <label></label>
+            <input type="checkbox"> Organisasi di Luar Kampus
+            <input type="checkbox"> Bidang Seni
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
