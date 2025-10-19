@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header */
+
+header {
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+
+/* Nav dengan Flexbox */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+/* Section dengan Grid */
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+article {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Responsif */
+
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .menu a {
+        display: block;
+        margin: 5px 0;
+    }
+}
